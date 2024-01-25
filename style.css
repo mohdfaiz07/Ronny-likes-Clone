@@ -2,13 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html,body{
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+
+
 }
+
+#main{
+    min-height: 100vh;
+    width: 100%;
+}
+
 
 
 .nav{
@@ -16,25 +24,24 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
-
+    padding: 10px 30px;
 }
 
 
 .logo img{
     height: 60px;
-    width: 110px;
-    margin-left: 40px;
 }
 
-
+.text{
+    display: flex;
+    gap: 20px;
+}
 
 .text a{
     text-decoration: none;
     color: #000;
     font-family: poppins;
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 1.3em;
     font-weight: 500;
     position: relative;
     
@@ -63,7 +70,7 @@ html,body{
 
 
 .icon i{
-    font-size: 23px;
+    font-size: 1.5em;
     margin-right: 15px;
     padding: 2px 2px;
 
@@ -98,7 +105,7 @@ html,body{
 }
 
 .left h1{
-    font-size: 55px;
+    font-size: 3.5em;
     width: 90%;
     letter-spacing: 2px;
     position: relative;
@@ -115,11 +122,9 @@ html,body{
 }
 
 .left h2{
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 500;
     padding-top: 20px;
-    width: 90%;
-
 }
 
 .left button{
@@ -286,8 +291,9 @@ html,body{
 
 
 .page2{
-    height: 100vh;
+    min-height: 85vh;
     width: 100%;
+   
 
 }
 
@@ -295,7 +301,8 @@ html,body{
     width: 100%;
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 60px 0px;
 }
 
@@ -317,14 +324,14 @@ html,body{
 
 
 .line1-icon1 i{
-    font-size: 25px;
+    font-size: 1.7em;
     color: #000;
     
 }
 
 
 .line1-text1 h5{
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: gilroy;
     font-weight: 500;
     color: #dadada;
@@ -333,18 +340,12 @@ html,body{
 
 
 .line1-text1 h4{
-    font-size: 23px;
+    font-size: 1.5em;
     font-family: gilroy;
     font-weight: 500 ;
     color: #000;
 
 }
-
-
-
-
-
-
 
 .line1-icon2{
     padding: 10px 12px;
@@ -355,14 +356,14 @@ html,body{
 
 
 .line1-icon2 i{
-    font-size: 25px;
+    font-size: 1.5em;
     color: rgba(255, 21, 21, 0.469);
     
 }
 
 
 .line1-text2 h5{
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: gilroy;
     font-weight: 500;
     color: #000;
@@ -371,7 +372,7 @@ html,body{
 
 
 .line1-text2 h4{
-    font-size: 17px;
+    font-size: 1em;
     font-family: gilroy;
     font-weight: 500 ;
     color: #dadada;
@@ -389,13 +390,13 @@ html,body{
 
 
 .line1-icon3 i{
-    font-size: 25px;
+    font-size: 1.5em;
     color: blue;    
 }
 
 
 .line1-text3 h5{
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: gilroy;
     font-weight: 500;
     color: #000;
@@ -404,7 +405,7 @@ html,body{
 
 
 .line1-text3 h4{
-    font-size: 17px;
+    font-size: 1em;
     font-family: gilroy;
     font-weight: 500 ;
     color: #dadada;
@@ -451,7 +452,7 @@ html,body{
     font-weight: 100;
     padding-left: 40px;
     color: #bbb7b7;
-    font-size: 14px;
+    font-size: .9em;
     padding-top: 8px;
 
 }
@@ -490,14 +491,19 @@ html,body{
 
 .page3-text{
     width: 100%;
-    text-align: center;
-    padding: 20px 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    
 }
 
 .page3-text h1{
-    font-size: 40px;
+    width: 50%;
+    font-size: 2.5em;
     font-weight: 600;
     font-family: gilroy;
+    text-align: center;
 }
 
 .page3-text span{
@@ -594,6 +600,9 @@ html,body{
     width: 100%;
     background-image: linear-gradient(309deg, #000, #f4f0fa, #fefefe);
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
 
 }
 
@@ -604,12 +613,25 @@ html,body{
 
 }
 
-#pg4-img1{
-    height: 500px;
-    width: 350px;
-    margin-left: 150px;
-    margin-top: 80px;
+.page4-mainImg{
+    height: 80%;
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 12%;
+    top: 10%;
+
     
+}
+
+#pg4-img1{
+    height: 100%;
+    width: 100%;    
+}
+
+#pg4-img1>img{
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -686,7 +708,7 @@ html,body{
 }
 
 .page4-top-text h1{
-    font-size: 70px;
+    font-size: 4.3em;
     font-weight: 600;  
     width: 70%;
     line-height: 70px;
@@ -720,7 +742,7 @@ html,body{
     background-color: #c8c8c8;
 }
 .page4-btn h6{
-    font-size: 15px;
+    font-size: 1em;
     color: #dfd5d5;
 
 }
@@ -746,7 +768,7 @@ html,body{
 }
 
 .page4-bottom-text i{
-    font-size: 20px;
+    font-size: 1.3em;
     background-color: rgb(222, 248, 222);
     border-radius: 50%;
     padding: 8px 8px;
@@ -757,7 +779,7 @@ html,body{
 }
 
 .page4-bottom-text h6{
-    font-size: 10px;
+    font-size: .6em;
     font-family: gilroy;
     font-weight: 500;
 }
@@ -792,12 +814,11 @@ html,body{
     width: 100%;
     height: 20%;
     
-
 }
 #pg5-head h1{
     font-family: gilroy;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 600;
    
 }
@@ -809,6 +830,7 @@ html,body{
     width: 100%;
     height: 10%;
     display: flex;
+    justify-content: center;
     gap: 15px;    
     padding: 10px 10px;
 
@@ -846,12 +868,14 @@ html,body{
 .pg5-option{
     width: 50%;
     display: flex;
+    align-items: center;
     gap: 50px;
     overflow: hidden;
+    padding: 15px 20px;
 }
 
 .pg5-option h6{
-    font-size: 20px;
+    font-size: 1.3em;
     text-transform: capitalize;
     font-weight: 400;
 }
@@ -891,15 +915,23 @@ html,body{
   width: 100%;
   background-color: #fafafa;
   display: flex;
+  justify-content: space-around;
   
 }
 
 .pg5-btm-left{
     height: 100%;
     width: 50%;
-    padding: 20px 0px 10px 320px; 
+
+    
 }
 
+.pg5-elemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 20px;
+}
 
 .elem{
     display: flex;
@@ -974,8 +1006,6 @@ html,body{
 }
 
 
-
-
 .page6{
     height: 70vh;
     width: 100%;
@@ -989,11 +1019,12 @@ html,body{
 .pg6-left{
     height: 100%;
     width: 50%;
-    padding: 50px 0px 0px 320px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 50px;
 }
-
-
 
 
 .pg6-left img{
@@ -1002,7 +1033,7 @@ html,body{
 }
 
 .pg6-left h4{
-    font-size: 16px;
+    font-size: 1em;
     margin-top: 20px;
     font-weight: 500;
 
@@ -1010,7 +1041,7 @@ html,body{
 
 
 .pg6-left h5{
-    font-size: 16px;
+    font-size: 1em;
     margin-top: 8px;
     font-weight: 500;
 
@@ -1030,12 +1061,15 @@ html,body{
 .pg6-right{
     height: 100%;
     width: 50%;
-    padding: 70px 0px 0px 120px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 50px;
 }
 
 .pg6-right h6{
-    font-size: 17px;
+    font-size: 1em;
     color: #000;
     padding: 10px  ;
 
@@ -1043,8 +1077,8 @@ html,body{
 
 
 .pg6-right h3{
-    font-size: 16px;
-    margin-top: 30px;
+    font-size: 1em;
+    margin-top: 50px;
     font-weight: 500;
     opacity: .8;
     color: #bbb7b7;
@@ -1052,3 +1086,36 @@ html,body{
 }
 
 
+@media only screen and (max-width: 767px) {
+    /* Add your mobile-specific styles here */
+    body {
+        font-size: 12px; /* Example: Adjust font size for smaller screens */
+        }
+
+        .left{
+            padding: 100px 40px;
+        }
+        .left h1{
+            font-size: 2.5em;
+            
+        }        
+        .left h2{
+            font-size: 1.7em;
+            
+        }
+        
+        .left button{
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+
+    .page2-line2{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding: 10px 0px;
+
+}
+
+
+    }
